@@ -52,9 +52,9 @@ while running:
     frame = (frame + 1) % 8
 
     if x1 < x and y1 < y:
-        x1 += 10
-        y1 += 10
- 
+        x1 += (x - x1) / 3
+        y1 += (y - y1) / 3
+
 
     delay(0.05)
 
