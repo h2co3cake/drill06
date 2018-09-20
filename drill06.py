@@ -11,7 +11,7 @@ def handle_events():
         if event.type == SDL_QUIT:
             running = False
         elif event.type == SDL_MOUSEMOTION:
-            hand_x, hand_y = event.x, KPU_HEIGHT - 1 - event.y
+            hand_x, hand_y = event.x + 20, KPU_HEIGHT - 1 - event.y - 30
         elif event.type == SDL_MOUSEBUTTONDOWN:
             x, y = event.x, KPU_HEIGHT - 1 - event.y
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
