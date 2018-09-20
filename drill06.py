@@ -59,6 +59,14 @@ while running:
         x1 += (x - x1) / 3
         y1 -= (y1 - y) / 3
 
+    elif x < x1 and y1 < y:
+        x1 -= (x1 - x) / 3
+        y1 += (y - y1) / 3
+
+    elif x < x1 and y < y1:
+        x1 -= (x1 - x) / 3
+        y1 -= (y1 - y) / 3
+
 
     delay(0.05)
 
